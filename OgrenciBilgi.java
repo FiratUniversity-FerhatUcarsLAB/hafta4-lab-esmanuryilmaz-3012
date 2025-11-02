@@ -6,6 +6,7 @@
      *
      * Bu program kullanicidan ogrenci bilgilerini alir ve
      * duzenli bir formatta ekrana yazdirir.
+     *Biraz sonlarda kafam karıştı ve son kısmı tam yapamadım bir türlü.
      */
 
 import java.util.Scanner;
