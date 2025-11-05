@@ -1,12 +1,10 @@
- /*
+     /*
      * Ad Soyad: [Esmanur YILMAZ]
      * Ogrenci No: [250541033]
      * Tarih: [02.11.2025]
      * Aciklama: Gorev 1 - Ogrenci Bilgi Sistemi
-     *
      * Bu program kullanicidan ogrenci bilgilerini alir ve
      * duzenli bir formatta ekrana yazdirir.
-     *Biraz sonlarda kafam karıştı ve son kısmı tam yapamadım bir türlü.
      */
 
 import java.util.Scanner;
@@ -35,14 +33,26 @@ import java.util.Scanner;
             // gpa;
             System.out.println("GPA:");
             double gpa = input.nextDouble();
-            System.out.println(gpa);{
+            System.out.println(gpa);
+            String durum;
                 if (gpa < 1.8) {
+                    durum = "Basarisiz Ogrenci";
                     System.out.println("KALDI"); // Eğer 1.8'den küçükse kaldı
                 } else {
+                    durum = "Basarili Ogrenci";
                     System.out.println("GECTI"); // Değilse (yani 1.8 veya daha büyükse) geçti
                 }
-            }
-                // Scanner'i kapatin (önemli pratik)
+            // Scanner'i kapatin (önemli pratik)
             input.close();
+            // --- Çıktı Formatı ---
+            System.out.println("\n=== OGRENCI BILGI SISTEMI ===");
+
+            // printf() kullanarak düzenli çıktı alma ve GPA'yı 2 ondalık basamakla gösterme
+            System.out.printf("Ad Soyad: %s %s%n", ad, soyad);
+            System.out.printf("Ogrenci No: %d%n", ogrNo);
+            System.out.printf("Yas: %d%n", yas);
+            System.out.printf("GPA: %.2f%n", gpa); // %.2f ile 2 ondalık basamak garantilenir
+            System.out.printf("Durum: %s%n", durum);
+            System.out.println("===============================");
         }
     }
