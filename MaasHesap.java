@@ -39,13 +39,13 @@ public class MaasHesap {
         System.out.print("Çalışanın adı ve soyadını girin: ");
         String adSoyad = scanner.nextLine();
 
-        System.out.print("Aylık brüt maaşı girin (TL, örn: 15000.00): ");
+        System.out.print("Aylık brüt maaşı girin: ");
         double brutMaas = scanner.nextDouble();
 
-        System.out.print("Haftalık çalışma saatini girin (int, örn: 40): ");
+        System.out.print("Haftalık çalışma saatini girin: ");
         int haftalikCalismaSaati = scanner.nextInt();
         
-        System.out.print("Bu aydaki mesai saati sayısını girin (int, örn: 10): ");
+        System.out.print("Bu aydaki mesai saati sayısını girin: ");
         int mesaiSaati = scanner.nextInt();
 
         scanner.close();
